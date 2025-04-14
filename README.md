@@ -1,6 +1,6 @@
 ---
 
-# 🩺 Medobot – AI-Based Medical Chatbot
+# 🩺 Medobot – Your Virtual Medical Assistant
 
 Medobot is an intelligent, AI-powered healthcare chatbot designed to help users with symptom checking, medicine identification using image input 📸, health-related queries, and hospital locator services 🏥. With a simple interface built using Flask and HTML, and powered by Tesseract OCR and the LLaMA API from SambaNova, Medobot is tailored for quick and user-friendly medical assistance.
 
