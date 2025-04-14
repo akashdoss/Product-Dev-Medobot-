@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>💊 Medicine Chatbot</h2>
+        <div class="sidebar-content">
+            <h3>Features</h3>
+            <ul>
+                <li>Get information about various medicines</li>
+                <li>Ask for dosage, side effects, and usage</li>
+                <li>Find nearby hospitals by location</li>
+                <li>Optimized for all devices</li>
+            </ul>
+            <hr>
+            <div class="sidebar-section">
+                <label for="location">Enter Location:</label>
+                <input type="text" id="location" placeholder="City or address...">
+                <button onclick="fetchHospitals()">🏥 Find Hospitals</button>
+                <div id="hospital-output" class="output-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 style="color: red;">MEDOBOT</h1>
+        <p class="main-subtitle">💊 Your AI-powered medicine assistant</p>
+
+        <!-- Medicine Query Section -->
+        <div class="content-section">
+            <h2>Ask About a Medicine</h2>
+            <div class="input-group">
+                <input type="text" id="medicine-name" placeholder="Type medicine name...">
+                <button onclick="getMedicineInfo()">💬 Get Info</button>
+            </div>
+            <div id="progress-bar-medicine" class="progress-bar"></div>
+            <div id="medicine-output" class="output-box"></div>
+        </div>
+
+        <!-- Image Upload Section -->
+        <div class="content-section">
+            <h2>Upload Medicine Image</h2>
+            <div class="input-group">
+                <input type="file" id="medicine-image" accept=".png, .jpg, .jpeg">
+                <button onclick="searchImage()">🔍 Search Info</button>
+            </div>
+            <div id="progress-bar-image" class="progress-bar"></div>
+            <div id="image-preview" class="image-preview"></div>
+            <div id="image-output" class="output-box"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
