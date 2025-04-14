@@ -137,10 +137,5 @@ Medobot is designed to assist:
 
 ---
 
-## ❤️ Contributing
-
-Pull requests are welcome! If you have suggestions or improvements, feel free to contribute or open an issue.
-
----
 
 
