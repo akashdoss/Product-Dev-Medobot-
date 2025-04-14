@@ -99,6 +99,25 @@ The server will start at `http://127.0.0.1:5000`. Open it in your browser to acc
    - The system returns a list of nearby hospitals (static or dynamically fetched).
 
 ---
+## 🚀 Future Enhancements  
+
+Medobot has room to grow! Future upgrades may include:
+- 🗣️ Voice input and multilingual support  
+- 📊 Health history and record tracking  
+- 📱 Mobile-first UI improvements  
+- 🧬 Disease prediction using health record trends  
+
+---
+
+## 👨‍⚕️ Use Cases  
+
+Medobot is designed to assist:
+- 📌 Patients needing quick symptom insights  
+- 📌 Caregivers verifying medicines from prescriptions  
+- 📌 Travelers or emergency situations to find nearest hospitals  
+- 📌 Users seeking basic health guidance or home remedies  
+
+---
 
 ## 📌 Note
 
