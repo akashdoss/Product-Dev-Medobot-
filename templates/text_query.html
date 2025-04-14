@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Chatbot - Text Query</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <div class="page-container">
+        
+        <h1 style="color: red;">MEDOBOT - Text Query</h1>
+        <p class="page-subtitle">💬 Ask about any medicine</p>
+        <div class="input-group">
+            <input type="text" id="medicine-name" placeholder="Type medicine name...">
+            <button onclick="getMedicineInfo()">Get Info</button>
+        </div>
+        <div id="progress-bar" class="progress-bar"></div>
+        <div id="medicine-output" class="output-box"></div>
+        <a href="/modules" class="back-button">Back to Modules</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
