@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Chatbot - Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="landing-body">
+    <canvas id="particle-canvas"></canvas>
+    <div class="landing-container">
+        <h1 class="landing-title">Welcome to <span style="color: #ff4d4d;">MEDOBOT</span></h1>
+        <p class="landing-subtitle">Your Virtual Medical Assistant !</p>
+        <div class="heartbeat-container">
+            <svg class="heartbeat" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 85 C20 60, 10 40, 10 40 C10 20, 30 10, 50 30 C70 10, 90 20, 90 40 C90 40, 80 60, 50 85 Z" fill="#ff4d4d"/>
+            </svg>
+        </div>
+        <p class="landing-description">
+            Get instant answers about medicines, identify them from images, and locate nearby hospitals.
+        </p>
+        <a href="/modules" class="landing-button">Start Healing Now 💊</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
