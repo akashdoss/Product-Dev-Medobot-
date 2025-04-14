@@ -1,5 +1,3 @@
-Here's an elaborated `README.md` file for your Medobot project, based on your folder structure and features:
-
 ---
 
 # 🩺 Medobot – AI-Based Medical Chatbot
