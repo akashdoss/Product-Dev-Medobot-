@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Chatbot - Image Query</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-container">
+        <h1 style="color: red;">MEDOBOT - Image Query</h1>
+        <p class="page-subtitle">📸 Upload a medicine image</p>
+        <div class="input-group">
+            <input type="file" id="medicine-image" accept=".png, .jpg, .jpeg">
+            <button onclick="searchImage()">Search Info</button>
+        </div>
+        <div id="progress-bar" class="progress-bar"></div>
+        <div id="image-preview" class="image-preview"></div>
+        <div id="image-output" class="output-box"></div>
+        <a href="/modules" class="back-button">Back to Modules</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
